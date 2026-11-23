@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth overflow-x-hidden">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>কর্মসূচি ও প্রকল্প — জুরাইন গ্রিন ব্যাংক</title>
+  
+  <meta name="description" content="জুরাইন গ্রিন ব্যাংকের ৫টি মূল কর্মসূচি: জিরো-ওয়েস্ট কাপ নার্সারি, সন্ধ্যার চারা রোপণ, দেশি বীজ ব্যাংক, বায়োচার কর্মশালা ও ছাদবাগান সহায়তা।" />
+  <link rel="canonical" href="https://juraingreenbank.vercel.app/programs.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="কর্মসূচি ও প্রকল্প — জুরাইন গ্রিন ব্যাংক" />
+  <meta property="og:description" content="মাঠপর্যায়ের ৫টি পরিবেশবান্ধব টেকসই কর্মসূচি যা বদলে দিচ্ছে পূর্ব জুরাইনের রূপ।" />
+  <meta property="og:image" content="https://juraingreenbank.vercel.app/assets/images/reused-cups.jpg" />
+
+  <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { 950: '#071710', 900: '#0D2B1D', 800: '#143D29', 700: '#1D5438' },
+            leaf: { 600: '#246B31', 500: '#2E833C', 400: '#389B48', 300: '#58B967', 100: '#E8F5EA' },
+            soil: { 50: '#FAF9F5', 100: '#F2EFE6', 200: '#E5DFD0', 300: '#D5CDBB' }
+          },
+          fontFamily: {
+            display: ['Hind Siliguri', 'Outfit', 'sans-serif'],
+            sans: ['Hind Siliguri', 'Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="selection:bg-leaf-500 selection:text-white">
+
+  <!-- Floating Pill Navbar -->
+  <header class="fixed top-4 inset-x-0 z-40 px-3 sm:px-6 transition-all duration-300">
+    <nav class="max-w-6xl mx-auto glass-nav rounded-full shadow-lg shadow-forest-950/10 px-3 sm:px-5 py-2 flex items-center justify-between gap-3">
+      <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+        <img src="assets/images/logo.jpg" alt="Jurain Green Bank Logo" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover border border-leaf-500/40 shadow-sm" />
+        <div class="leading-tight">
+          <span class="font-heading font-bold text-xs sm:text-base text-forest-950 block">জুরাইন গ্রিন ব্যাংক</span>
+          <span class="text-[10px] sm:text-[11px] text-leaf-600 font-semibold block truncate max-w-[130px] sm:max-w-none">জুরাইন সবুজ যোদ্ধার একটি উদ্যোগ</span>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-5 text-sm font-semibold text-forest-900/80">
+        <a href="index.html" class="nav-link hover:text-leaf-600 transition-colors">হোম</a>
+        <a href="about.html" class="nav-link hover:text-leaf-600 transition-colors">আমাদের কথা</a>
+        <a href="programs.html" class="nav-link hover:text-leaf-600 transition-colors active">কর্মসূচি</a>
+        <a href="gallery.html" class="nav-link hover:text-leaf-600 transition-colors">মাঠের অ্যালবাম</a>
+        <a href="request.html" class="nav-link hover:text-leaf-600 transition-colors">চারা সংগ্রহ</a>
+        <a href="volunteer.html" class="nav-link hover:text-leaf-600 transition-colors">স্বেচ্ছাসেবক</a>
+        <a href="contact.html" class="nav-link hover:text-leaf-600 transition-colors">যোগাযোগ</a>
+      </div>
+
+      <div class="flex items-center gap-2 shrink-0">
+        <button id="langToggleBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-soil-100 hover:bg-soil-200 text-forest-900 border border-soil-200">
+          <i data-lucide="globe" class="w-3.5 h-3.5 text-leaf-600"></i>
+          <span id="langLabel">English</span>
+        </button>
+        <a href="request.html" class="btn-astramonks hidden sm:inline-flex bg-leaf-500 hover:bg-leaf-600 text-white text-xs sm:text-sm pl-4 pr-1.5 py-1.5">
+          <span>চারা সংগ্রহ করুন</span>
+          <span class="cta-icon-badge w-6 h-6">
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </a>
+        <button id="mobileMenuBtn" type="button" class="lg:hidden p-2 rounded-full hover:bg-soil-100 text-forest-900">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="forest-gradient text-white pt-32 sm:pt-40 pb-16 sm:pb-24 border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-emerald-400 text-xs font-semibold">
+        <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+        <span>কর্মসূচি ও প্রকল্প রূপরেখা</span>
+      </span>
+      <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white mt-4 max-w-3xl leading-tight">
+        মাঠপর্যায়ে আমাদের ৫টি সবুজ কর্মপ্রবাহ
+      </h1>
+      <p class="text-base sm:text-lg text-white/80 max-w-2xl mt-4 leading-relaxed">
+        প্রতিটি কর্মসূচি সাধারণ মানুষের প্রত্যক্ষ সমস্যা সমাধানের লক্ষ্যে সাজানো। প্লাস্টিক বর্জ্য অপসারণ থেকে শুরু করে পুষ্টিকর নিরাপদ খাদ্যের প্রাপ্যতা—সবই আমাদের পরিধির অন্তর্ভুক্ত।
+      </p>
+    </div>
+  </section>
+
+  <!-- Detailed Programs List -->
+  <section class="py-16 sm:py-24 bg-white space-y-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <!-- Program 1 -->
+      <div id="cups" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pb-16 border-b border-soil-200">
+        <div class="lg:col-span-6 space-y-4">
+          <span class="px-3 py-1 rounded-full bg-leaf-100 text-leaf-600 text-xs font-bold uppercase tracking-wider">কর্মসূচি ০১ · জিরো-ওয়েস্ট</span>
+          <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-forest-950">
+            পুনর্ব্যবহৃত কাপ নার্সারি উদ্যোগ
+          </h2>
+          <p class="text-sm sm:text-base text-forest-900/75 leading-relaxed">
+            ঢাকার স্থানীয় চায়ের দোকানগুলো থেকে প্রতিদিন বিপুল পরিমাণে ওয়ান-টাইম প্লাস্টিক কাপ নর্দমা ও জলাশয়ে ফেলা হয়। আমরা সেই কাপগুলো স্বেচ্ছাশ্রমে সংগ্রহ করি, পরিষ্কার ও জীবাণুমুক্ত করি এবং নিচে ছোট ছিদ্র করে মাটির মিশ্রণ প্রস্তুত করি।
+          </p>
+          <div class="space-y-2 text-xs sm:text-sm text-forest-900/80">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-leaf-600"></i>
+              <span>সংগৃহীত ও পুনর্ব্যবহৃত কাপ: ১০,০০০+ এর বেশি</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-leaf-600"></i>
+              <span>মূল চারা: মানিপ্ল্যান্ট, তুলসী, পুদিনা, মরিচ ও অ্যালোভেরা</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-leaf-600"></i>
+              <span>সুবিধা: প্লাস্টিক দূষণ রোধ এবং সহজে যেকোনো টেবিলে বা বারান্দায় রাখার উপযোগী</span>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-6">
+          <img src="assets/images/reused-cups.jpg" alt="Reused Cups Nursery" class="rounded-3xl shadow-xl w-full h-80 sm:h-96 object-cover" />
+        </div>
+      </div>
+
+      <!-- Program 2 -->
+      <div id="night-drives" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pb-16 border-b border-soil-200">
+        <div class="lg:col-span-6 order-2 lg:order-1">
+          <img src="assets/images/night-potting.jpg" alt="Night Potting Drive" class="rounded-3xl shadow-xl w-full h-80 sm:h-96 object-cover" />
+        </div>
+        <div class="lg:col-span-6 order-1 lg:order-2 space-y-4">
+          <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wider">কর্মসূচি ০২ · কমিউনিটি একতা</span>
+          <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-forest-950">
+            সন্ধ্যার চারা রোপণ ও কাটিং ক্যাম্প
+          </h2>
+          <p class="text-sm sm:text-base text-forest-900/75 leading-relaxed">
+            দিনের কর্মব্যস্ততা শেষে পূর্ব জুরাইন নূরানী মসজিদ প্রাঙ্গণে সমবেত হন শিক্ষার্থী ও স্থানীয় তরুণরা। খোলা আকাশের নিচে বা আলোর নিচে গান ও আড্ডার সাথে চলে মাটির সাথে হাত মেলানো—কাটিং প্রস্তুত, কম্পোস্ট মিশ্রণ ও টবে চারা স্থাপন।
+          </p>
+          <div class="space-y-2 text-xs sm:text-sm text-forest-900/80">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-leaf-600"></i>
+              <span>সপ্তাহে ৩ দিন নিয়মিত সন্ধ্যাকালীন কর্মশালা</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-leaf-600"></i>
+              <span>তরুণদের মানসিক প্রশান্তি ও মাদকবিরোধী সামাজিক পরিবেশ গঠন</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program 3 -->
+      <div id="seed-bank" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pb-16 border-b border-soil-200">
+        <div class="lg:col-span-6 space-y-4">
+          <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider">কর্মসূচি ০৩ · খাদ্য সার্বভৌমত্ব</span>
+          <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-forest-950">
+            দেশি বীজ ব্যাংক ও বৈচিত্র্য রক্ষা
+          </h2>
+          <p class="text-sm sm:text-base text-forest-900/75 leading-relaxed">
+            বহুজাতিক হাইব্রিড বীজের কারণে আমাদের ঐতিহ্যবাহী দেশীয় ফসলের জাত আজ বিলুপ্তির পথে। জুরাইন গ্রিন ব্যাংক দেশের বিভিন্ন অঞ্চল থেকে দেশি শিম, লাউ, সরিষা, তিল ও শাকসবজির খাঁটি বীজ সংগ্রহ ও বিনামূল্যে কৃষকদের মধ্যে বিতরণ করে।
+          </p>
+          <div class="space-y-2 text-xs sm:text-sm text-forest-900/80">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-leaf-600"></i>
+              <span>সংরক্ষিত বীজ জাত: ২৫+ এর অধিক দেশি প্রজাতির বীজ</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-leaf-600"></i>
+              <span>পদ্ধতি: "বীজ নিন, ফসল ফলান, উদ্বৃত্ত বীজ গ্রিন ব্যাংকে জমা দিন"</span>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-6">
+          <img src="assets/images/seed-circle.jpg" alt="Heirloom Seeds" class="rounded-3xl shadow-xl w-full h-80 sm:h-96 object-cover" />
+        </div>
+      </div>
+
+      <!-- Program 4 & 5 Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+        <div class="bg-soil-50 rounded-3xl p-8 border border-soil-200/90 space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-leaf-100 text-leaf-600 flex items-center justify-center">
+            <i data-lucide="flame" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-forest-950">কর্মসূচি ০৪: বায়োচার ও জীবন্ত মাটি কর্মশালা</h3>
+          <p class="text-xs sm:text-sm text-forest-900/75 leading-relaxed">
+            ফসলের উচ্ছিষ্ট ডালপালা ও কাঠের গুঁড়া কম অক্সিজেনে পুড়িয়ে আমরা তৈরি করি স্থায়ী কার্বন স্পঞ্জ বা বায়োচার। এটি মাটির ভেতর উপকারী ব্যাকটেরিয়াকে বাসা বানাতে সাহায্য করে ও পানির অপচয় রোধ করে।
+          </p>
+        </div>
+
+        <div class="bg-soil-50 rounded-3xl p-8 border border-soil-200/90 space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-leaf-100 text-leaf-600 flex items-center justify-center">
+            <i data-lucide="home" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-forest-950">কর্মসূচি ০৫: ছাদবাগান ও নগর সবুজায়ন সহায়তা</h3>
+          <p class="text-xs sm:text-sm text-forest-900/75 leading-relaxed">
+            যাঁরা ছাদবাগান করতে চান কিন্তু মাটির মিশ্রণ বা ওজনের ভারসাম্য বুঝতে পারছেন না, আমাদের ভলান্টিয়ার টিম তাঁদের বাড়িতে গিয়ে হালকা জৈব মাটির সংমিশ্রণ ও ড্রেনেজ সিস্টেম তৈরিতে সরাসরি সহায়তা প্রদান করে।
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Box -->
+  <section class="py-16 bg-forest-950 text-white text-center">
+    <div class="max-w-3xl mx-auto px-4 space-y-5">
+      <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-white">আপনার ছাদ বা ঘরের জন্য চারা প্রয়োজন?</h2>
+      <p class="text-sm sm:text-base text-white/80">আমাদের অনলাইন আবেদন ফরম পূরণ করে আপনার পছন্দের চারা ও জৈব সার অর্ডার করুন।</p>
+      <div class="pt-2">
+        <a href="request.html" class="btn-astramonks bg-emerald-500 hover:bg-emerald-600 text-forest-950 font-bold px-7 py-3.5 text-base">
+          <span>অনলাইনে চারা আবেদন করুন</span>
+          <span class="cta-icon-badge w-8 h-8">
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-forest-950 text-white py-10 border-t border-white/10 text-center text-xs text-white/60">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <span>© ২০২৬ জুরাইন গ্রিন ব্যাংক · জুরাইন সবুজ যোদ্ধা</span>
+      <span>ডিজিটাল পার্টনার: <a href="https://astramonks.space" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold hover:underline">Astramonks</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/supabase.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

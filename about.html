@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth overflow-x-hidden">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>আমাদের কথা — জুরাইন গ্রিন ব্যাংক ও জুরাইন সবুজ যোদ্ধা</title>
+  
+  <meta name="description" content="জুরাইন গ্রিন ব্যাংকের জন্ম, লক্ষ্য এবং পূর্ব জুরাইনের পরিবেশ সংকট মোকাবেলায় আমাদের লড়াই। অ্যাস্ট্রামঙ্কস (Astramonks) এর স্বেচ্ছাসেবী সহায়তায় পরিচালিত।" />
+  <meta name="keywords" content="জুরাইন গ্রিন ব্যাংক ইতিহাস, জুরাইন সবুজ যোদ্ধা, পূর্ব জুরাইন পরিবেশ, Astramonks" />
+  <link rel="canonical" href="https://juraingreenbank.vercel.app/about.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="আমাদের কথা — জুরাইন গ্রিন ব্যাংক ও জুরাইন সবুজ যোদ্ধা" />
+  <meta property="og:description" content="পূর্ব জুরাইনের মাটি, বাতাস ও খাদ্য সুরক্ষায় একদল নিবেদিতপ্রাণ তরুণ ও পরিবেশ যোদ্ধার গল্প।" />
+  <meta property="og:image" content="https://juraingreenbank.vercel.app/assets/images/hero-seeds.jpg" />
+
+  <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { 950: '#071710', 900: '#0D2B1D', 800: '#143D29', 700: '#1D5438' },
+            leaf: { 600: '#246B31', 500: '#2E833C', 400: '#389B48', 300: '#58B967', 100: '#E8F5EA' },
+            soil: { 50: '#FAF9F5', 100: '#F2EFE6', 200: '#E5DFD0', 300: '#D5CDBB' }
+          },
+          fontFamily: {
+            display: ['Hind Siliguri', 'Outfit', 'sans-serif'],
+            sans: ['Hind Siliguri', 'Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="selection:bg-leaf-500 selection:text-white">
+
+  <!-- Floating Pill Navbar -->
+  <header class="fixed top-4 inset-x-0 z-40 px-3 sm:px-6 transition-all duration-300">
+    <nav class="max-w-6xl mx-auto glass-nav rounded-full shadow-lg shadow-forest-950/10 px-3 sm:px-5 py-2 flex items-center justify-between gap-3">
+      <a href="index.html" class="flex items-center gap-2.5 shrink-0 group">
+        <img src="assets/images/logo.jpg" alt="Jurain Green Bank Logo" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover border border-leaf-500/40 shadow-sm" />
+        <div class="leading-tight">
+          <span class="font-heading font-bold text-xs sm:text-base text-forest-950 block" data-i18n="brandName">জুরাইন গ্রিন ব্যাংক</span>
+          <span class="text-[10px] sm:text-[11px] text-leaf-600 font-semibold block truncate max-w-[130px] sm:max-w-none" data-i18n="brandSub">জুরাইন সবুজ যোদ্ধার একটি উদ্যোগ</span>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-5 text-sm font-semibold text-forest-900/80">
+        <a href="index.html" class="nav-link hover:text-leaf-600 transition-colors" data-i18n="navHome">হোম</a>
+        <a href="about.html" class="nav-link hover:text-leaf-600 transition-colors active" data-i18n="navAbout">আমাদের কথা</a>
+        <a href="programs.html" class="nav-link hover:text-leaf-600 transition-colors" data-i18n="navPrograms">কর্মসূচি</a>
+        <a href="gallery.html" class="nav-link hover:text-leaf-600 transition-colors" data-i18n="navGallery">মাঠের অ্যালবাম</a>
+        <a href="request.html" class="nav-link hover:text-leaf-600 transition-colors" data-i18n="navRequest">চারা সংগ্রহ</a>
+        <a href="volunteer.html" class="nav-link hover:text-leaf-600 transition-colors" data-i18n="navVolunteer">স্বেচ্ছাসেবক</a>
+        <a href="contact.html" class="nav-link hover:text-leaf-600 transition-colors" data-i18n="navContact">যোগাযোগ</a>
+      </div>
+
+      <div class="flex items-center gap-2 shrink-0">
+        <button id="langToggleBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-soil-100 hover:bg-soil-200 text-forest-900 border border-soil-200 transition-all active:scale-95" aria-label="Switch Language">
+          <i data-lucide="globe" class="w-3.5 h-3.5 text-leaf-600"></i>
+          <span id="langLabel">English</span>
+        </button>
+        <a href="request.html" class="btn-astramonks hidden sm:inline-flex bg-leaf-500 hover:bg-leaf-600 text-white text-xs sm:text-sm pl-4 pr-1.5 py-1.5">
+          <span data-i18n="ctaRequest">চারা সংগ্রহ করুন</span>
+          <span class="cta-icon-badge w-6 h-6">
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </a>
+        <button id="mobileMenuBtn" type="button" class="lg:hidden p-2 rounded-full hover:bg-soil-100 text-forest-900">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden lg:hidden max-w-6xl mx-auto mt-2 glass-nav rounded-3xl shadow-xl p-4 flex-col gap-1.5 animate-panel">
+      <a href="index.html" class="px-4 py-2 rounded-2xl hover:bg-leaf-100 text-sm font-medium text-forest-900">হোম</a>
+      <a href="about.html" class="px-4 py-2 rounded-2xl bg-leaf-100/80 text-sm font-bold text-forest-950">আমাদের কথা</a>
+      <a href="programs.html" class="px-4 py-2 rounded-2xl hover:bg-leaf-100 text-sm font-medium text-forest-900">কর্মসূচি</a>
+      <a href="gallery.html" class="px-4 py-2 rounded-2xl hover:bg-leaf-100 text-sm font-medium text-forest-900">মাঠের অ্যালবাম</a>
+      <a href="request.html" class="px-4 py-2 rounded-2xl hover:bg-leaf-100 text-sm font-medium text-forest-900">চারা সংগ্রহ</a>
+      <a href="volunteer.html" class="px-4 py-2 rounded-2xl hover:bg-leaf-100 text-sm font-medium text-forest-900">স্বেচ্ছাসেবক</a>
+      <a href="contact.html" class="px-4 py-2 rounded-2xl hover:bg-leaf-100 text-sm font-medium text-forest-900">যোগাযোগ</a>
+    </div>
+  </header>
+
+  <!-- Page Hero Header -->
+  <section class="forest-gradient text-white pt-32 sm:pt-40 pb-16 sm:pb-24 border-b border-white/10 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+      <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-emerald-400 text-xs font-semibold">
+        <i data-lucide="history" class="w-3.5 h-3.5"></i>
+        <span>আমাদের উৎপত্তি ও দর্শন</span>
+      </span>
+      <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white mt-4 max-w-3xl leading-tight">
+        কংক্রিটের নগরে জীবন্ত মাটির স্বপ্ন
+      </h1>
+      <p class="text-base sm:text-lg text-white/80 max-w-2xl mt-4 leading-relaxed">
+        জুরাইন সবুজ যোদ্ধার জন্ম সাধারণ মানুষের ভালোবাসায়। শিল্প দূষণ, প্লাস্টিক আবর্জনা ও অনিরাপদ রাসায়নিকের বিরুদ্ধে পূর্ব জুরাইন থেকে শুরু হওয়া এক সবুজ বিপ্লব।
+      </p>
+    </div>
+  </section>
+
+  <!-- Narrative Section: Genesis & Reality -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-6 space-y-5">
+        <span class="text-xs font-bold uppercase tracking-widest text-leaf-600">তৃণমূল আন্দোলন ২০২৪</span>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-forest-950 leading-snug">
+          কীভাবে শুরু হলো জুরাইন সবুজ যোদ্ধা ও গ্রিন ব্যাংক?
+        </h2>
+        <p class="text-sm sm:text-base text-forest-900/75 leading-relaxed">
+          পূর্ব জুরাইন এলাকাটি ঢাকার পুরান ঢাকা ও ডেমরা-পোস্তগোলা সংযোগস্থলের অত্যন্ত ঘনবসতিপূর্ণ অঞ্চল। পর্যাপ্ত উন্মুক্ত উদ্যান বা খেলার মাঠ না থাকায় গ্রীষ্মকালে এখানকার তাপমাত্রা ভয়াবহ রূপ ধারণ করে। উপরন্তু, স্থানীয় চায়ের দোকান থেকে প্রতিদিন লাখ লাখ ডিসপোজেবল প্লাস্টিক কাপ নর্দমায় ফেলা হচ্ছিল, যার ফলে সামান্য বৃষ্টিতেই জলাবদ্ধতা সৃষ্টি হতো।
+        </p>
+        <p class="text-sm sm:text-base text-forest-900/75 leading-relaxed">
+          এই সংকটে বসে না থেকে ২০২৪ সালে স্থানীয় তরুণ ও পরিবেশপ্রেমীরা একজোট হন। স্লোগান ওঠে—<strong>"প্লাস্টিক কাপে রোপণ করো প্রাণ, জুরাইন হবে সবুজ উদ্যান।"</strong> আমরা ফেলে দেওয়া প্লাস্টিক কাপ সংগ্রহ করে ধুয়ে তাতে জীবন্ত মানিপ্ল্যান্ট ও লতাগুল্মের কাটিং রোপণ শুরু করি। এই তৃণমূল উদ্যোগই রূপ নেয় <strong>জুরাইন গ্রিন ব্যাংক</strong>-এ।
+        </p>
+      </div>
+
+      <div class="lg:col-span-6">
+        <div class="rounded-3xl overflow-hidden shadow-2xl border border-soil-200 relative group">
+          <img src="assets/images/seed-circle.jpg" alt="Seeds Circle" class="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-transparent to-transparent flex items-end p-6">
+            <p class="text-white text-sm font-semibold">দেশি বীজ ও মাটির বন্ধন — নূরানী মসজিদ প্রাঙ্গণ, পূর্ব জুরাইন</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values & Philosophy -->
+  <section class="py-16 sm:py-20 bg-soil-50 border-y border-soil-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-leaf-600">মূল আদর্শ</span>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-forest-950 mt-1">আমাদের ৩টি মূল অঙ্গীকার</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-3xl p-7 border border-soil-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-2xl bg-leaf-100 text-leaf-600 flex items-center justify-center mb-5">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-forest-950">১০০% রাসায়নিক মুক্ত মাটি</h3>
+          <p class="text-xs sm:text-sm text-forest-900/70 mt-2.5 leading-relaxed">
+            কোনো কৃত্রিম ইউরিয়া বা কীটনাশক নয়। কেবল জৈব কম্পোস্ট, গোবর সার ও বায়োচার দিয়ে মাটির জীবন্ত অণুজীব রক্ষা করা আমাদের মূল নীতি।
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-7 border border-soil-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-2xl bg-leaf-100 text-leaf-600 flex items-center justify-center mb-5">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-forest-950">সর্বসাধারণের অংশগ্রহণ</h3>
+          <p class="text-xs sm:text-sm text-forest-900/70 mt-2.5 leading-relaxed">
+            প্রতিটি ছাদবাগান, প্রতিটি গলি এবং প্রতিটি বারান্দাকে একটি করে মিনি নার্সারিতে রূপান্তরিত করে কমিউনিটির প্রতিটি মানুষকে সম্পৃক্ত করা।
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-7 border border-soil-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-2xl bg-leaf-100 text-leaf-600 flex items-center justify-center mb-5">
+            <i data-lucide="infinity" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-forest-950">জিরো-ওয়েস্ট সার্কুলার অর্থনীতি</h3>
+          <p class="text-xs sm:text-sm text-forest-900/70 mt-2.5 leading-relaxed">
+            রান্নাঘরের সবজি বর্জ্য রূপ নেবে খাঁটি সারে, ফেলে দেওয়া ওয়ান-টাইম কাপ রূপ নেবে চারা পাত্রে—কোনো সম্পদই অপচয় হবে না।
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Astramonks Voluntary Partnership Deep-Dive -->
+  <section id="agency" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="bg-forest-950 rounded-[2.5rem] p-8 sm:p-14 text-white relative overflow-hidden shadow-2xl border border-white/10">
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-5">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold border border-emerald-500/30">
+              <i data-lucide="code-2" class="w-4 h-4"></i>
+              <span>Pro-Bono Digital Stewardship · Astramonks</span>
+            </div>
+            <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-white leading-tight">
+              Astramonks কেন এই প্ল্যাটফর্ম স্বেচ্ছায় তৈরি করলো?
+            </h2>
+            <p class="text-sm sm:text-base text-white/80 leading-relaxed">
+              Astramonks হলো একটি বৈশ্বিক আধুনিক ডিজিটাল ও কৃত্রিম বুদ্ধিমত্তা এজেন্সি (https://astramonks.space)। আমরা বিশ্বাস করি প্রযুক্তি ও সৃজনশীলতার শক্তি কেবল বাণিজ্যিক লাভের জন্য নয়—বরং তৃণমূলের সবচেয়ে গুরুত্বপূর্ণ সামাজিক ও পরিবেশগত সংগ্রামগুলোকে শক্তিশালী করার জন্য।
+            </p>
+            <p class="text-sm sm:text-base text-white/80 leading-relaxed">
+              পূর্ব জুরাইনের মতো একটি ঘনবসতিপূর্ণ এলাকায় একদল যুবক যখন সম্পূর্ণ স্বউদ্যোগে রাতের আঁধারে প্লাস্টিক কাপে চারা রোপণ করে শহরের ফুসফুস বাঁচানোর চেষ্টা করছে, তখন তাদের পাশে ডিজিটাল অবকাঠামো নিয়ে দাঁড়ানো আমাদের নৈতিক দায়িত্ব। সেই দায়িত্ববোধ থেকেই আমরা এই সম্পূর্ণ প্ল্যাটফর্মটি বিনা মূল্যে স্বেচ্ছাশ্রমে ডিজাইন, কোড ও হোস্ট করেছি।
+            </p>
+            <div class="pt-2">
+              <a href="https://astramonks.space" target="_blank" rel="noopener noreferrer" class="btn-astramonks bg-white text-forest-950 hover:bg-soil-100 pl-6 pr-2 py-3 text-sm">
+                <span>Astramonks এজেন্সি ভিজিট করুন</span>
+                <span class="w-7 h-7 rounded-full bg-forest-950 text-white flex items-center justify-center">
+                  <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 flex justify-center">
+            <div class="glass-card rounded-3xl p-6 sm:p-8 text-center space-y-4 max-w-xs">
+              <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto text-2xl font-bold font-mono">
+                AM
+              </div>
+              <h3 class="font-heading font-bold text-lg text-white">Astramonks</h3>
+              <p class="text-xs text-white/70">"Think Cosmic, Build Like Monks" — AI-Native Digital Studio supporting Grassroots Movements.</p>
+              <span class="inline-block px-3 py-1 rounded-full bg-white/10 text-[11px] font-semibold text-emerald-300">Voluntary Tech Partner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-forest-950 text-white py-10 border-t border-white/10 text-center">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/70">
+      <span>© ২০২৬ জুরাইন গ্রিন ব্যাংক · পাওয়ার্ড বাই জুরাইন সবুজ যোদ্ধা</span>
+      <div>
+        <span>স্বেচ্ছায় নকশা ও নির্মাণ: </span>
+        <a href="https://astramonks.space" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold hover:underline">Astramonks</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/supabase.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

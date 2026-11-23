@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth overflow-x-hidden">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>মাঠের অ্যালবাম ও গল্প — জুরাইন গ্রিন ব্যাংক</title>
+  
+  <meta name="description" content="জুরাইন গ্রিন ব্যাংকের বাস্তব মাঠপর্যায়ের কার্যক্রম, ফ্লাইওভারের নিচে চারা বিতরণ, রাতের আলোয় তরুণদের কাজ এবং দেশি বীজের সংগ্রহ অ্যালবাম।" />
+  <link rel="canonical" href="https://juraingreenbank.vercel.app/gallery.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="মাঠের অ্যালবাম — জুরাইন গ্রিন ব্যাংক" />
+  <meta property="og:description" content="বাস্তব মাঠের কাজে জুরাইন জুড়ে প্রকৃতির প্রতি ভালোবাসা।" />
+  <meta property="og:image" content="https://juraingreenbank.vercel.app/assets/images/flyover-distribution.jpg" />
+
+  <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { 950: '#071710', 900: '#0D2B1D', 800: '#143D29', 700: '#1D5438' },
+            leaf: { 600: '#246B31', 500: '#2E833C', 400: '#389B48', 300: '#58B967', 100: '#E8F5EA' },
+            soil: { 50: '#FAF9F5', 100: '#F2EFE6', 200: '#E5DFD0', 300: '#D5CDBB' }
+          },
+          fontFamily: {
+            display: ['Hind Siliguri', 'Outfit', 'sans-serif'],
+            sans: ['Hind Siliguri', 'Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="selection:bg-leaf-500 selection:text-white">
+
+  <!-- Floating Pill Navbar -->
+  <header class="fixed top-4 inset-x-0 z-40 px-3 sm:px-6 transition-all duration-300">
+    <nav class="max-w-6xl mx-auto glass-nav rounded-full shadow-lg shadow-forest-950/10 px-3 sm:px-5 py-2 flex items-center justify-between gap-3">
+      <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+        <img src="assets/images/logo.jpg" alt="Jurain Green Bank Logo" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover border border-leaf-500/40 shadow-sm" />
+        <div class="leading-tight">
+          <span class="font-heading font-bold text-xs sm:text-base text-forest-950 block">জুরাইন গ্রিন ব্যাংক</span>
+          <span class="text-[10px] sm:text-[11px] text-leaf-600 font-semibold block truncate max-w-[130px] sm:max-w-none">জুরাইন সবুজ যোদ্ধার একটি উদ্যোগ</span>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-5 text-sm font-semibold text-forest-900/80">
+        <a href="index.html" class="nav-link hover:text-leaf-600 transition-colors">হোম</a>
+        <a href="about.html" class="nav-link hover:text-leaf-600 transition-colors">আমাদের কথা</a>
+        <a href="programs.html" class="nav-link hover:text-leaf-600 transition-colors">কর্মসূচি</a>
+        <a href="gallery.html" class="nav-link hover:text-leaf-600 transition-colors active">মাঠের অ্যালবাম</a>
+        <a href="request.html" class="nav-link hover:text-leaf-600 transition-colors">চারা সংগ্রহ</a>
+        <a href="volunteer.html" class="nav-link hover:text-leaf-600 transition-colors">স্বেচ্ছাসেবক</a>
+        <a href="contact.html" class="nav-link hover:text-leaf-600 transition-colors">যোগাযোগ</a>
+      </div>
+
+      <div class="flex items-center gap-2 shrink-0">
+        <button id="langToggleBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-soil-100 hover:bg-soil-200 text-forest-900 border border-soil-200">
+          <i data-lucide="globe" class="w-3.5 h-3.5 text-leaf-600"></i>
+          <span id="langLabel">English</span>
+        </button>
+        <a href="request.html" class="btn-astramonks hidden sm:inline-flex bg-leaf-500 hover:bg-leaf-600 text-white text-xs sm:text-sm pl-4 pr-1.5 py-1.5">
+          <span>চারা সংগ্রহ করুন</span>
+          <span class="cta-icon-badge w-6 h-6">
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </a>
+        <button id="mobileMenuBtn" type="button" class="lg:hidden p-2 rounded-full hover:bg-soil-100 text-forest-900">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="forest-gradient text-white pt-32 sm:pt-40 pb-16 sm:pb-20 border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-emerald-400 text-xs font-semibold">
+        <i data-lucide="camera" class="w-3.5 h-3.5"></i>
+        <span>ছবিতে মাঠের বাস্তবতা</span>
+      </span>
+      <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white mt-4 max-w-3xl leading-tight">
+        মাঠের অ্যালবাম ও প্রত্যক্ষ পদচিহ্ন
+      </h1>
+      <p class="text-base sm:text-lg text-white/80 max-w-2xl mt-4 leading-relaxed">
+        আমাদের প্রতিটি ছবি এক একটি জীবন্ত গল্প। ফ্লাইওভারের নিচে শত শত বস্তা চারা পৌঁছানো থেকে শুরু করে রাতের আঁধারে তরুণদের রোপণ উৎসব—সবই এখানে সংরক্ষিত।
+      </p>
+    </div>
+  </section>
+
+  <!-- Bento Gallery Grid Section -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <!-- Filter Bar -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-12" id="galleryFilters">
+        <button type="button" data-filter="all" class="filter-btn px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-forest-900 text-white shadow-md transition-all active:scale-95">সব কার্যক্রম</button>
+        <button type="button" data-filter="saplings" class="filter-btn px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-soil-100 text-forest-900/75 hover:bg-soil-200 transition-all active:scale-95">চারা বিতরণ ও রোপণ</button>
+        <button type="button" data-filter="community" class="filter-btn px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-soil-100 text-forest-900/75 hover:bg-soil-200 transition-all active:scale-95">স্বেচ্ছাসেবকদের কাজ</button>
+        <button type="button" data-filter="seeds" class="filter-btn px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-soil-100 text-forest-900/75 hover:bg-soil-200 transition-all active:scale-95">বীজ ও মাটি</button>
+      </div>
+
+      <div id="bentoGrid" class="grid grid-cols-1 md:grid-cols-12 gap-5"></div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="app-modal hidden fixed inset-0 z-50 bg-forest-950/85 backdrop-blur-md p-4 flex items-center justify-center">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-soil-200 animate-panel">
+      <div class="relative">
+        <img id="lightboxImg" src="" alt="" class="w-full max-h-[55vh] object-cover" />
+        <button type="button" class="close-modal-btn absolute top-3 right-3 w-9 h-9 rounded-full bg-forest-950/80 hover:bg-forest-950 text-white flex items-center justify-center transition-colors">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div class="p-6">
+        <span id="lightboxTag" class="text-xs font-bold uppercase tracking-wider text-leaf-600"></span>
+        <h4 id="lightboxTitle" class="font-heading font-bold text-xl text-forest-950 mt-1"></h4>
+        <p id="lightboxDesc" class="text-sm text-forest-900/75 mt-2.5 leading-relaxed"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="hidden fixed bottom-5 right-5 z-50 bg-forest-950 text-white px-5 py-3 rounded-full shadow-2xl text-xs sm:text-sm font-semibold flex items-center gap-2">
+    <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+    <span id="toastText"></span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-forest-950 text-white py-10 border-t border-white/10 text-center text-xs text-white/60">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <span>© ২০২৬ জুরাইন গ্রিন ব্যাংক · জুরাইন সবুজ যোদ্ধা</span>
+      <span>ডিজিটাল পার্টনার: <a href="https://astramonks.space" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold hover:underline">Astramonks</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/supabase.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
